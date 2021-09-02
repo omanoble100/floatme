@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    background:hsl(233, 47%, 7%);
+    font-family: 'Lexend Deca', 'Inter';
+}
+
+.contain{
+    margin: 2em auto;
+    width: 330px;
+    border-radius: .5em
+}
+
+.my-img {
+    background: hsl(277, 78%, 31%);
+    width: fit-content;
+    border-radius: .5em .5em 0 0;
+    margin: 0 auto;
+    height: 250px;
+}
+
+img {
+    opacity: 0.5;
+    background-clip: cover;
+    border-radius: .5em .5em 0 0;
+    
+}
+
+.text-area{
+    background: hsl(244, 38%, 16%);
+    padding: 2.5em 2.5em 0;
+    text-align: center;
+    border-radius: 0 0 .5em .5em;
+
+    h1{
+        color: hsl(0, 0%, 100%);
+        font-family: 'Inter';
+        font-size: 30px;
+
+        span{
+            color: hsl(277, 64%, 61%);
+        }
+    }
+
+    .first-prg{
+        color: hsla(0, 0%, 100%, 0.75);
+        font-family: 'Lexend Deca';
+        line-height: 25px;
+    }
+
+    .analysis{
+        color: hsla(0, 0%, 100%, 0.6);
+        font-family: 'Inter';
+        line-height: 3px;
+        padding: 3em auto;
+        margin: 3em;
+
+        h3{
+            color: white;
+            text-transform: uppercase;
+        }
+
+        p{
+          text-transform: uppercase;
+          font-size: 10px;
+          padding-bottom: 3em;
+          letter-spacing: 2px;  
+        }
+    }
+}
+.attribution {
+    color: white;
+}
+
+@media screen and (min-width:1440px){
+
+    .contain{
+        border-radius: .5em;
+        width: 70%;
+        height: 300px;
+        margin: 150px auto;
+    }
+
+    .my-img{
+        background-size: cover;
+        float: right;
+        width: 466px;
+        height: 392px;
+        margin-left: 0;
+        margin-right: 30px;
+        border-radius: 0 .5em  .5em 0;
+
+            img{
+                float: right;
+                width: 466px;
+                opacity: 0.5;
+                height: 394px;
+                border-radius: 0 .5em  .5em 0;
+            }
+    }    
+
+    .text-area{
+        margin-left: 30px;
+        width: 40%;
+        padding-left: 4em;
+        text-align: left;
+        border-radius: .5em 0 0 .5em;
+
+        h1{
+            padding-right: 2em;
+        }
+
+        .first-prg{
+            padding-right: 2em;
+            font-size: 14px;
+            line-height: 30px;
+        }
+        
+
+        .analysis{
+            justify-content: space-between;
+            display: flex;
+            text-align: left;
+            margin: 2em 2em 1em 0;
+            padding-right: 3em;
+            padding-top: 35px;
+            
+
+            h3{
+                padding: 0 auto;
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+    
+            p{
+              padding: 0 auto;
+              letter-spacing: 2px;  
+            }
+        }    
+    }
+} 
+
